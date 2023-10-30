@@ -12,6 +12,9 @@
 		A80B9D922AE2937900021B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80B9D912AE2937900021B60 /* Assets.xcassets */; };
 		A80B9D952AE2937900021B60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A80B9D942AE2937900021B60 /* Preview Assets.xcassets */; };
 		A80B9DA92AE2957200021B60 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80B9DA82AE2957200021B60 /* MainTabView.swift */; };
+		A8302C9C2AF03DE8002A3296 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8302C9B2AF03DE8002A3296 /* EditProfileView.swift */; };
+		A8302C9E2AF041FE002A3296 /* EditProfileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8302C9D2AF041FE002A3296 /* EditProfileRowView.swift */; };
+		A8302CA22AF04505002A3296 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8302CA12AF04505002A3296 /* EditProfileViewModel.swift */; };
 		A84D76B82AEBD5ED00A65405 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84D76B72AEBD5ED00A65405 /* PostGridView.swift */; };
 		A862D0252AE93406004DDEC8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862D0242AE93406004DDEC8 /* LoginView.swift */; };
 		A862D0272AE93F18004DDEC8 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A862D0262AE93F18004DDEC8 /* AddEmailView.swift */; };
@@ -57,6 +60,9 @@
 		A80B9D912AE2937900021B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A80B9D942AE2937900021B60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A80B9DA82AE2957200021B60 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A8302C9B2AF03DE8002A3296 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		A8302C9D2AF041FE002A3296 /* EditProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRowView.swift; sourceTree = "<group>"; };
+		A8302CA12AF04505002A3296 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		A84D76B72AEBD5ED00A65405 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		A862D0242AE93406004DDEC8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A862D0262AE93F18004DDEC8 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
@@ -230,9 +236,8 @@
 		A80B9DA52AE2946800021B60 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				A8F22D392AE2C55000034175 /* ProfileView.swift */,
-				A862D0322AE96923004DDEC8 /* CurrentUserProfileView.swift */,
-				A8A258702AEBD86500B50EEF /* ProfileHeaderView.swift */,
+				A8302CA02AF044DD002A3296 /* View */,
+				A8302C9F2AF044D7002A3296 /* ViewModel */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -254,6 +259,26 @@
 				A8A258902AEBEDD500B50EEF /* Service */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A8302C9F2AF044D7002A3296 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8302CA12AF04505002A3296 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8302CA02AF044DD002A3296 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8F22D392AE2C55000034175 /* ProfileView.swift */,
+				A862D0322AE96923004DDEC8 /* CurrentUserProfileView.swift */,
+				A8A258702AEBD86500B50EEF /* ProfileHeaderView.swift */,
+				A8302C9B2AF03DE8002A3296 /* EditProfileView.swift */,
+				A8302C9D2AF041FE002A3296 /* EditProfileRowView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A8738F502AED6E2800D193F3 /* ViewModel */ = {
@@ -426,13 +451,16 @@
 				A862D0332AE96923004DDEC8 /* CurrentUserProfileView.swift in Sources */,
 				A862D0272AE93F18004DDEC8 /* AddEmailView.swift in Sources */,
 				A84D76B82AEBD5ED00A65405 /* PostGridView.swift in Sources */,
+				A8302CA22AF04505002A3296 /* EditProfileViewModel.swift in Sources */,
 				A862D02B2AE943EB004DDEC8 /* CreateUsernameView.swift in Sources */,
 				A8A258962AEBEFD000B50EEF /* ContentViewModel.swift in Sources */,
+				A8302C9C2AF03DE8002A3296 /* EditProfileView.swift in Sources */,
 				A8738F4F2AED594000D193F3 /* LoginViewModel.swift in Sources */,
 				A8A258992AEC15FE00B50EEF /* RegistrationViewModel.swift in Sources */,
 				A8A258752AEBDEE100B50EEF /* UploadPostViewModel.swift in Sources */,
 				A8A258712AEBD86500B50EEF /* ProfileHeaderView.swift in Sources */,
 				A862D02F2AE94713004DDEC8 /* CompleteSignUpView.swift in Sources */,
+				A8302C9E2AF041FE002A3296 /* EditProfileRowView.swift in Sources */,
 				A862D0312AE962EA004DDEC8 /* User.swift in Sources */,
 				A8A288E32AE8124A00CD56B5 /* SearchView.swift in Sources */,
 				A8738F532AED6E3700D193F3 /* SearchViewModel.swift in Sources */,
