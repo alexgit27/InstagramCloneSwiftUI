@@ -19,7 +19,7 @@ struct ProfileView: View {
             
             ProfileHeaderView(user: user)
             
-            PostGridView(posts: posts)
+            PostGridView(user: user)
             
         }
         .navigationTitle("Profile")
