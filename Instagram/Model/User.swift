@@ -12,7 +12,7 @@ struct User: Identifiable, Hashable, Codable {
     let id: String
     
     var username: String
-    var profileImageURL: String?
+    var profileImageUrl: String?
     var fullname: String?
     var bio: String?
     let email: String
@@ -25,9 +25,9 @@ struct User: Identifiable, Hashable, Codable {
 
 extension User {
     static var MOCK_USERS: [User] = [
-        .init(id: UUID().uuidString, username: "batman", profileImageURL: "batman_avatar", fullname: "Bruce Wayne", bio: "Gotham dark knight", email: "batman@gmail.com"),
-        .init(id: UUID().uuidString, username: "batman", profileImageURL: "batman_avatar", fullname: "Bruce Wayne", bio: "Gotham dark knight", email: "batman@gmail.com"),
-        .init(id: UUID().uuidString, username: "batman", profileImageURL: "batman_avatar", fullname: "Bruce Wayne", bio: "Gotham dark knight", email: "batman@gmail.com"),
-        .init(id: UUID().uuidString, username: "batman", profileImageURL: "batman_avatar", fullname: "Bruce Wayne", bio: "Gotham dark knight", email: "batman@gmail.com")
+        .init(id: UUID().uuidString, username: "batman", profileImageUrl: nil, fullname: "Bruce Wayne", bio: "Gotham dark knight", email: "batman@gmail.com"),
+        .init(id: UUID().uuidString, username: "batman", profileImageUrl: "batman_avatar", fullname: "Bruce Wayne", bio: "Gotham dark knight", email: "batman@gmail.com"),
+        .init(id: UUID().uuidString, username: "batman", profileImageUrl: "batman_avatar", fullname: "Bruce Wayne", bio: "Gotham dark knight", email: "batman@gmail.com"),
+        .init(id: UUID().uuidString, username: "batman", profileImageUrl: "batman_avatar", fullname: "Bruce Wayne", bio: "Gotham dark knight", email: "batman@gmail.com")
     ]
 }
